@@ -16,6 +16,7 @@
             font-size: 2.5rem;
             font-weight: normal;
             padding-bottom: 8px;
+            padding-top: 3%;
             }
 
             h3 {
@@ -33,7 +34,7 @@
             }
 
             .contact {
-            margin:60px 0 100px 0;
+            margin:50px 0 80px 0;
             }
 
             .profile {
@@ -76,10 +77,18 @@
             text-decoration: none;
             }
 
+            .sticky {
+              background-color: aliceblue;
+              position: fixed;
+              top: 0;
+              width: 100%;
+              z-index: 5;
+            }
+
         </style>
     </head>
     <body>
-        <div>
+        <div class="sticky">
             <ul>
                 <li><a href="./projects.html">My Projects</a></li>
                 <li><a href="./index.html">Home</a></li>
@@ -87,7 +96,8 @@
             </ul>
         </div>
 
-        <h2>Get In Touch</h2>
+        <div class="contact">
+            <h2>Get In Touch</h2>
 
         <div class="flex-container">
             <img class="profile" src="images/headshot.png" alt="headshot">
@@ -113,6 +123,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/128/747/747374.png" alt="fb">
                 </h3>
             </div>
+        </div>
         </div>
     </body>
 </html>

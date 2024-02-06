@@ -15,6 +15,7 @@
                 font-size: 2.5rem;
                 font-weight: normal;
                 padding-bottom: 8px;
+                padding-top: 3%;
             }
 
             li a {
@@ -32,6 +33,7 @@
                 color: #68a0d8;
                 line-height: 2;
                 font-size: 1rem;
+                margin: 0;
             }
 
             .about {
@@ -50,6 +52,8 @@
                 width: 30%;
                 text-align: left;
                 padding: 0 5% 0 5%;
+                display: grid;
+                grid-template-columns: auto;
             }
 
             img {
@@ -69,11 +73,19 @@
             float: left;
             font-size: 1.2rem;
             }
-                 
+
+            .sticky {
+              background-color: aliceblue;
+              position: fixed;
+              top: 0;
+              width: 100%;
+              z-index: 5;
+            }
+
         </style>
     </head>
     <body>
-        <div>
+        <div class="sticky">
             <ul>
                 <li><a href="./projects.html">My Projects</a></li>
                 <li><a href="./contact.html">Contact Me</a></li>
@@ -82,14 +94,29 @@
         </div>
 
         <div class="about">
-            <h2>My Strengths.</h2>
+            <h2>About Me</h2>
             <div class="flex-container">
-                <p class="content">
-                    我是我所在环境的总和。未来五年人生目标为：经济独立，精神自由。上头的东西总在变。不变的是一直在上头。他人真诚的回应使我兴奋。
-                    Strong Self-learning & Problem-solving Ability
-                    Creativity
-                </p>
-                <img src="images/frisbee.JPG" alt="frisbee">
+                <div class="content">
+                    <p><a href="https://letterfromxiyu.zhubai.love/posts/2304475239511445504">The latest article in my blog</a></p>
+                    <p>清晰的自我认知：我是我所在环境的总和。</p>
+                    <p>未来五年人生目标为：经济独立，精神自由。上头的东西总在变。不变的是一直在上头。</p>
+                    <p>他人真诚的回应使我兴奋。</p>
+                    <p>Strong Self-learning & Problem-solving Ability</p>
+                    <p>Creativity</p>
+                </div>
+                <img src="images/frisbee.png" alt="frisbee">
+            </div>
+            <div class="flex-container">
+                <img src="images/doggy.png" alt="frisbee">
+                <div class="content">
+                    <p>The latest article in my blog</a></p>
+                    <p>清晰的自我认知：我是我所在环境的总和。</p>
+                    <p>未来五年人生目标为：经济独立，精神自由。上头的东西总在变。不变的是一直在上头。</p>
+                    <p>他人真诚的回应使我兴奋。</p>
+                    <p>Strong Self-learning & Problem-solving Ability</p>
+                    <p>Creativity</p>
+                </div>
+                
             </div>
         </div>
     </body>

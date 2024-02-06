@@ -36,7 +36,7 @@
 
             .home {
             position: relative;
-            padding: 20px 220px 20px 220px;
+            padding: 20px 20% 20px 20%;
             }
 
             h1 {
@@ -64,10 +64,18 @@
             line-height: 2;
             font-size: 1rem;
             }
+
+            .sticky {
+              background-color: aliceblue;
+              position: fixed;
+              top: 0;
+              width: 100%;
+              z-index: 5;
+            }
         </style>
     </head>
     <body>
-        <div>
+        <div class="sticky">
             <ul>
                 <li><a href="./projects.html">My Projects</a></li>
                 <li><a href="./contact.html">Contact Me</a></li>

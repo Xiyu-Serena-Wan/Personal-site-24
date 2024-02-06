@@ -15,6 +15,7 @@
                 font-size: 2.5rem;
                 font-weight: normal;
                 padding-bottom: 8px;
+                padding-top: 3%;
             }
 
             h3 {
@@ -40,6 +41,7 @@
             .img-content {
             width: 20%;
             padding: 0 5% 0 5%;
+            height: 20%;
             }
 
             ul {
@@ -72,12 +74,20 @@
             list-style: none;
             margin: 5% auto 5% auto;
             }
+
+            .sticky {
+              background-color: aliceblue;
+              position: fixed;
+              top: 0;
+              width: 100%;
+              z-index: 5;
+            }
             
         </style>
     </head>
     <body>
 
-        <div>
+        <div class="sticky">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./contact.html">Contact Me</a></li>

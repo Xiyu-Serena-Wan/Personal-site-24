@@ -2,96 +2,94 @@
     <head>
         <meta charset="utf-8">
         <title>About me</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="womens-day.png">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4336/4336775.png">
         <style>
             body {
-            color: #40514E;
-            margin: 0;
-            text-align: center;
-            font-family: 'Merriweather', serif;
-            }
-
-            h1 {
-            color: #66BFBF;
-            font-size: 5.625rem;
-            margin-top: 100px;
-            font-family: 'Sacramento', cursive;
+                background-color: #f3f6f4;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
             }
 
             h2 {
-            color: #66BFBF;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
-            font-weight: normal;
-            padding-bottom: 10px;
+                color: #464bae;
+                font-size: 2.5rem;
+                font-weight: normal;
+                padding-bottom: 8px;
             }
 
-            a {
-            color: #11999E;
-            font-family: 'Montserrat', sans-serif;
-            margin: 10px 20px 10px;
-            text-decoration: none;
+            li a {
+                display: block;
+                color: #414dd4;
+                padding: 12px 14px;
+                text-decoration: none;
             }
 
             a:hover {
-            color: #EAF6F6;
+                color: #f5e033;
             }
 
             p {
-            line-height: 2;
+                color: #68a0d8;
+                line-height: 2;
+                font-size: 1rem;
             }
 
-            .top-container {
-            background-color: #E4F6F6;
-            position: relative;
-            padding: 50px 200px 0 200px;
+            .about {
+                margin:50px auto 80px auto;
             }
 
-            .middle-container {
-            margin:50px auto 80px auto;
+            .flex-container {
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                list-style: none;
+                margin: 5% auto 5% auto;
             }
 
-            .profile {
-            width: 60%;
-            margin: auto;
+            .content {
+                width: 30%;
+                text-align: left;
+                padding: 0 5% 0 5%;
             }
 
-            .profile-text {
-            margin: auto;
+            img {
+                width: 30%;
+                border-radius: 50%;
+                height: 30%;
             }
 
-            .profile-img {
-            width: 40%;
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
             }
 
+            li {
+            float: left;
+            font-size: 1.2rem;
+            }
+                 
         </style>
     </head>
     <body>
-        <div class="top-container">
-            
-            <h1>I am Xiyu.</h1>
-            <h2>a backend programmer.</h2>
-            
-            <img src="images/mountain.png" alt="mountain">
+        <div>
+            <ul>
+                <li><a href="./projects.html">My Projects</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
         </div>
-        <div class="middle-container">
-            <div class="profile">
-                <img class="profile-img" src="images/angela.png" alt="">
-                <h2>Hello.</h2>
-                <p class="profile-text">My name is Xiyu Wan. I am a first year graduate student
-                    from Northeastern University majoring in computer science. Here is my <a href="https://drive.google.com/file/d/1dQZ8w5dxh3ujd6tChNHXLNWUJJjr9qKP/view?usp=sharing">resume</a>. 
+
+        <div class="about">
+            <h2>My Strengths.</h2>
+            <div class="flex-container">
+                <p class="content">
+                    我是我所在环境的总和。未来五年人生目标为：经济独立，精神自由。上头的东西总在变。不变的是一直在上头。他人真诚的回应使我兴奋。
+                    Strong Self-learning & Problem-solving Ability
+                    Creativity
                 </p>
-                <br>
-                <p class="profile-text">I have one internship experience in the past, which was being a data analysis intern at Liangdao Intelligence
-                    in 2021 where I followed projects with other data analysts and software engineers in both Germany
-                    and China. In that role, a major accomplishment I am most proud of was that
-                    I was able to build simulation software on linux that evaluates algorithms before on-road tests
-                    by myself. My work contributed a lot to our team's algorithm testing pipeline.
-                </p>
-                <!-- I am an aspiring Software Developer, a feminist and a
-                    ultimate frisbee player.
-                    我是我所在环境的总和。未来五年人生目标为：经济独立，精神自由。上头的东西总在变。不变的是一直在上头。他人真诚的回应使我兴奋。 -->
+                <img src="images/frisbee.JPG" alt="frisbee">
             </div>
         </div>
     </body>

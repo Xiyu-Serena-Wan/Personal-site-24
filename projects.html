@@ -2,127 +2,120 @@
     <head>
         <meta charset="utf-8">
         <title>My Projects</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="womens-day.png">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4336/4336775.png">
         <style>
             body {
-            color: #40514E;
-            margin: 0;
-            text-align: center;
-            font-family: 'Merriweather', serif;
+                background-color: #f3f6f4;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
             }
 
             h2 {
-            color: #66BFBF;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
-            font-weight: normal;
-            padding-bottom: 10px;
+                color: #464bae;
+                font-size: 2.5rem;
+                font-weight: normal;
+                padding-bottom: 8px;
             }
 
             h3 {
-            color: #11999E;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
+                color: #68a0d8;
             }
 
-            a {
-            color: #11999E;
-            font-family: 'Montserrat', sans-serif;
-            margin: 10px 20px 10px;
+            p {
+                color: #414dd4;
+            line-height: 2;
+            font-size: 1rem;
+            }
+
+            .project {
+            margin:50px auto 80px auto;
+            }
+
+            .content {
+            width: 30%;
+            text-align: left;
+            padding: 0 5% 0 5%;
+            }
+
+            .img-content {
+            width: 20%;
+            padding: 0 5% 0 5%;
+            }
+
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            }
+
+            li {
+            float: left;
+            font-size: 1.2rem;
+            }
+
+            li a {
+            display: block;
+            color: #414dd4;
+            padding: 12px 14px;
             text-decoration: none;
             }
 
             a:hover {
-            color: #EAF6F6;
+            color: #f5e033;
             }
 
-            p {
-            line-height: 2;
-            }
-
-            hr {
-            border-style: none;
-            border-top-style: dotted;
-            border-top-color: #EAF6F6;
-            border-width: 6px;
-            width: 4%;
-            margin: 80px auto 80px auto;
-            }
-
-            .middle-container {
-            margin:50px auto 80px auto;
-            }
-
-            .skill-row {
-            width: 50%;
-            margin: 60px auto 120px auto;
-            text-align: left;
-            }
-
-            .code-img {
-            width: 20%;
-            float: left;
-            margin-right: 30px;
-            }
-
-            .frisbee-img {
-            width: 20%;
-            float: right;
-            margin-left: 30px;
+            .flex-container {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            list-style: none;
+            margin: 5% auto 5% auto;
             }
             
         </style>
     </head>
     <body>
-        <div class="middle-container">
-            <div class="skills">
-                <h2>My Skills.</h2>
-                <div class="skill-row">
-                    <img class="code-img" src="https://cdn-icons-png.flaticon.com/512/1183/1183669.png" alt="python file icons">
-                    <h3>Distributed system</h3>
-                    <p class="code-text">Java servlets, Tomcat 9, multi-threaded design, RabbitMQ, AWS EC2, Objected-oriented programming.
-                        Here is my <a href="https://github.com/Xiyu-Serena-Wan/CS6650">project</a>.
+
+        <div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a href="./about.html">About Me</a></li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h2>My Projects</h2>
+
+            <div class="flex-container">
+                <img  class="img-content" src="images/tour.png" alt="">
+                <div class="content">
+                    <h3>Rowan's China Tour</h3>
+                    <p>Me and 2 other colleagues organized a 30-day clinic tour of the most famous ultimate athelete, Rowan, in China. We went to 20 different cities, did 30 clinics. In this experience, I am project manager, videographer, brainstorm, and write behind the scene stories</p>.
                     </p>
                 </div>
-                <div class="skill-row">
-                    <img class="code-img" src="https://cdn-icons-png.flaticon.com/512/2906/2906274.png" alt="python file icons">
+            </div>
+
+            <div class="flex-container">
+                <div class="content">
                     <h3>Database</h3>
-                    <p class="code-text">SQL, JDBC, DAO, MongoDB, relational database model design.
+                    <p>I developed a web app for an online learning platform that implements the MVC design pattern in Java. The tech stack includes: SQL, JDBC, DAO, MongoDB, relational database model design.
                         Here is my <a href="https://github.com/vmalecode/CS5200_Team_5">project</a>.
                     </p>
                 </div>
-                <div class="skill-row">
-                    <img class="frisbee-img" src="https://cdn-icons-png.flaticon.com/512/1329/1329016.png" alt="">
-                    <h3>Web development</h3>
-                    <p class="frisbee-text">CSS, HTML, Bootstrap, React.js, JQuery, Express.js, Node.js.
-                        Here is my <a href="https://github.com/Xiyu-Serena-Wan/Personal-site">project</a>.
-                    </p>
-                </div>
+                <img class="img-content" src="https://cdn-icons-png.flaticon.com/512/2906/2906274.png" alt="python file icons">
             </div>
-            <hr>
-            <div class="skills">
-                <h2>My Strengths.</h2>
-                <div class="skill-row">
-                    <img class="code-img" src="https://cdn-icons-png.flaticon.com/512/2621/2621303.png" alt="python file icons">
-                    <h3>Strong Self-learning & Problem-solving Ability</h3>
-                    <p class="code-text">During my first internship, I successfully created a method to simulate several autonomous
-                        driving scenarios ultilizing tech stacks and platforms that i wasn't familiar with at first. My work contributed
-                        a lot to our team's algorithm testing pipeline.
-                    </p>
-                </div>
-                <div class="skill-row">
-                    <img class="frisbee-img" src="https://cdn-icons-png.flaticon.com/512/888/888954.png" alt="python file icons">
-                    <h3>Creativity</h3>
-                    <p class="code-text">When I was doing a project aiming to evaluate cities' walkability, I invented a way using multiple
-                        APIs by Python to get data instead of analyzing map on professional software. In this way, people who don’t know how to
-                        use it can still solve the same problem. I am the only person who do this in the class.
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-        
-    </body>
 
+            <div class="flex-container">
+                <img class="img-content" src="https://cdn-icons-png.flaticon.com/512/1183/1183669.png" alt="python file icons">
+                <div class="content">
+                    <h3>Distributed system</h3>
+                    <p>I built a high-performance message processing & database querying system using Java, handling up to 500k requests. The tech stack includes: Java servlets, Tomcat 9, multi-threaded design, RabbitMQ, AWS EC2, Objected-oriented programming.
+                        Here is my <a href="https://github.com/Xiyu-Serena-Wan/CS6650">project</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

@@ -49,18 +49,38 @@
                 margin: 5% auto 5% auto;
             }
 
+            @media screen and (max-width: 600px) { 
+                .flex-container { 
+                    flex-direction: column; 
+                    align-items: center;
+                } 
+            }
+            
             .content {
                 width: 30%;
                 text-align: left;
-                padding: 0 6% 0 6%;
                 display: grid;
                 grid-template-columns: auto;
+                padding: 0 6% 0 6%;
+            }
+
+            @media screen and (max-width: 600px) { 
+                .content { 
+                    width: 80%;
+                    text-align: center;
+                }
             }
 
             img {
                 width: 30%;
                 border-radius: 50%;
                 height: 30%;
+            }
+
+            @media screen and (max-width: 600px) { 
+                img { 
+                    width: 50%;
+                }
             }
 
             ul {
@@ -88,9 +108,9 @@
     <body>
         <div class="sticky">
             <ul>
-                <li><a href="./projects.html">My Projects</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="../projects/index.html">My Projects</a></li>
+                <li><a href="../contact/index.html">Contact Me</a></li>
+                <li><a href="../index.html">Home</a></li>
             </ul>
         </div>
 
@@ -105,12 +125,11 @@
                     <p>Strong Self-learning & Problem-solving Ability</p>
                     <p>Creativity</p>
                 </div>
-                <img src="images/frisbee.png" alt="frisbee">
+                <img src="./frisbee.png" alt="frisbee">
             </div>
             <div class="flex-container">
-                <img src="images/doggy.png" alt="frisbee">
+                <img src="./doggy.png" alt="frisbee">
                 <div class="content">
-                    <p>The latest article in my blog</a></p>
                     <p>清晰的自我认知：我是我所在环境的总和。</p>
                     <p>未来五年人生目标为：经济独立，精神自由。上头的东西总在变。不变的是一直在上头。</p>
                     <p>他人真诚的回应使我兴奋。</p>

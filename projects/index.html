@@ -39,10 +39,23 @@
             padding: 0 6% 0 6%;
             }
 
-            .img-content {
+            @media screen and (max-width: 600px) { 
+                .content { 
+                    width: 80%;
+                    text-align: center;
+                }
+            }
+
+            img {
             width: 20%;
             padding: 0 6% 0 6%;
             height: 20%;
+            }
+
+            @media screen and (max-width: 600px) { 
+                img { 
+                    width: 50%;
+                }
             }
 
             ul {
@@ -76,6 +89,13 @@
             margin: 5% auto 5% auto;
             }
 
+            @media screen and (max-width: 600px) { 
+                .flex-container { 
+                    flex-direction: column; 
+                    align-items: center;
+                } 
+            }
+
             .sticky {
               background-color: aliceblue;
               position: fixed;
@@ -90,9 +110,9 @@
 
         <div class="sticky">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
-                <li><a href="./about.html">About Me</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact/index.html">Contact Me</a></li>
+                <li><a href="../about/index.html">About Me</a></li>
             </ul>
         </div>
 
@@ -100,10 +120,10 @@
             <h2>My Projects</h2>
 
             <div class="flex-container">
-                <img  class="img-content" src="images/tour.png" alt="">
+                <img src="tour.png" alt="">
                 <div class="content">
                     <h3>Rowan's China Tour</h3>
-                    <p>Me and 2 other colleagues organized a 30-day clinic tour of the most famous ultimate athelete, Rowan, in China. We went to 20 different cities, did 30 clinics. In this experience, I am project manager, videographer, brainstorm, and write behind the scene stories</p>.
+                    <p>Me and 2 other colleagues organized a 30-day clinic tour of the most famous ultimate athelete, Rowan, in China. We went to 20 different cities, did 30 clinics. In this experience, I am project manager, videographer, brainstorm, and write behind the scene stories.</p>
                     </p>
                 </div>
             </div>
@@ -115,11 +135,11 @@
                         Here is my <a href="https://github.com/vmalecode/CS5200_Team_5">project</a>.
                     </p>
                 </div>
-                <img class="img-content" src="https://cdn-icons-png.flaticon.com/512/2906/2906274.png" alt="python file icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/2906/2906274.png" alt="python file icons">
             </div>
 
             <div class="flex-container">
-                <img class="img-content" src="https://cdn-icons-png.flaticon.com/512/1183/1183669.png" alt="python file icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/1183/1183669.png" alt="python file icons">
                 <div class="content">
                     <h3>Distributed system</h3>
                     <p>I built a high-performance message processing & database querying system using Java, handling up to 500k requests. The tech stack includes: Java servlets, Tomcat 9, multi-threaded design, RabbitMQ, AWS EC2, Objected-oriented programming.

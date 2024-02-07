@@ -76,4 +76,14 @@ p {
   top: 0;
   width: 100%;
   z-index: 5;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Sacramento', cursive;
+  margin-top: 0.5%;
+  margin-right: 5%;
+  font-size: large;
 }
